@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Poor Story', cursive;
+  background-color: #B78751;
+}
+
+@-webkit-keyframes top--heading-name-shadow {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes top--heading-name-shadow {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.top {
+  background-image: url(https://media.kg-portal.ru/tv/s/sherlok/production/sherlok_199o.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #C3160C;
+}
+
+.top--container {
+  padding: 3rem 0 0 5rem;
+  text-align: center;
+}
+
+.top--heading {
+  border-bottom-color: #444A4C;
+  font-size: 1.5rem;
+  color: #C3160C;
+}
+
+.top--heading-name {
+  font-size: 2rem;
+  color: #F5EFE4;
+}
+
+.top--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top--heading-name:hover {
+  -webkit-animation: top--heading-name-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: top--heading-name-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.content--product {
+  border-radius: 4.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #444A4C;
+  opacity: 70%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 29rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content--product-image {
+  background-image: url(content__product.image_url);
+  width: 10rem;
+  height: 20rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1.1rem 0;
+}
+
+.content--product-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16.7rem;
+  text-align: center;
+}
+
+.content--product-text-name {
+  font-size: 2.5rem;
+  color: #F5EFE4;
+}
+
+.content--product-text-tagline {
+  font-size: 2rem;
+  color: #7b7b73;
+}
+
+.content--product-text-abv {
+  font-size: 1.5rem;
+  color: #C3160C;
+}
+
+.content--product-text-description {
+  font-size: 1rem;
+  color: #0a101b;
+}
+/*# sourceMappingURL=styles.css.map */

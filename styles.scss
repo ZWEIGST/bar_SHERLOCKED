@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import 'vars';
+
+html {
+ font-size: 20px;
+}
+
+body {
+ font-family: 'Poor Story', cursive;
+ background-color: $background;
+}
+
+
+  @keyframes top--heading-name-shadow {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+.top {
+    background-image: url(https://media.kg-portal.ru/tv/s/sherlok/production/sherlok_199o.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $color-text;
+    &--container {
+        padding: 3rem 0 0 5rem;
+        text-align: center;
+    }
+    &--heading {
+     border-bottom-color: $background-product;
+     font-size: 1.5rem;
+     color: $color-text;
+     &-name {
+        font-size: 2rem;
+        color: $color-text-heading;
+     }
+    }
+    &--box {
+     display: flex;
+     gap: 3.3rem;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+}
+ 
+.top--heading-name:hover {
+    animation: top--heading-name-shadow 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.content--product {
+    border-radius: 4.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $background-product;
+    opacity: 70%;
+    width: fit-content;
+    height: 29rem;
+    align-items: center;
+    &-image {
+    background-image: url(content__product.image_url);
+    width: 10rem;
+    height: 20rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:1.1rem 0;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 16.7rem;
+        text-align: center;
+        &-name {
+        font-size: 2.5rem;
+        color: $color-text-heading;
+        }
+        &-tagline {
+         font-size: 2rem;
+         color: $color-text-tagline;
+        }
+        &-abv {
+            font-size: 1.5rem;
+            color: $color-text;
+        }
+        &-description {
+            font-size: 1rem;
+            color: $color-text-description;
+        }
+    }
+}
